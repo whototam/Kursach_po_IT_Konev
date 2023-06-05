@@ -72,7 +72,7 @@ void MainWindow::saveImage()
 
 void MainWindow::Negativchik()
 {
-    if (imageLabel->pixmap()&&!imageLabel->pixmap()->isNull())//проверка условий(наличие пикчи в лейбле и отсуствие пустоты в лейбле(ДА БЛЯТЬ, ЭТО НЕ ОДНО И ТОЖЕ!!!))
+    if (imageLabel->pixmap()&&!imageLabel->pixmap()->isNull())//проверка условий(наличие пикчи в лейбле и отсуствие пустоты в лейбле(ЭТО НЕ ОДНО И ТОЖЕ!!!))
     {
         QImage image = imageLabel->pixmap()->toImage(); // Получение изображения из imageLabel
         for(int y = 0; y < image.height(); ++y) {
